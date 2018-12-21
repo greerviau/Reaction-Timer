@@ -12,4 +12,8 @@ When the circuit is loaded initialy it is set to a Starting state. When the user
 
 
 ## Program Structure
-The ReactionTimerDriver module is the top level module for the circuit design. It contains the Button Inputs as well as the Led and HEX display outputs. These inputs and outputs are assigned into the ReactionTimer module. The ReactionTimerDriver also handles the conversion of the 14 bit binary reaction time into 4 BCD digits that are then converted to HEX display. This module also handles what is displayed on the HEX display depending on the current state. The ReactionTimer module handles the slowing of the clock, the generation of the random countdown number, as well as the counters for the Countdown and Test states. This module also handles the state transition logic.
+### ReactionTimerDriver 
+This module is the top level module for the circuit design. It contains the Button Inputs as well as the Led and HEX display outputs. These inputs and outputs are assigned into the ReactionTimer module. It also handles the conversion of the 14 bit binary reaction time into 4 BCD digits that are then converted to HEX display as well as what is displayed on the HEX display depending on the current state. 
+
+### ReactionTimer 
+This module handles the slowing of the clock, the generation of the random countdown number, as well as the counters for the Countdown and Test states. This module also handles the state transition logic.
