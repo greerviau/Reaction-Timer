@@ -30,5 +30,5 @@ Slows the clock to 1Mhz which is equivalent to 1ms.
 ### BinaryToBCD
 Converts the binary reaction time to 4 BCD digits.
 
-## BCDToSevenSeg
+### BCDToSevenSeg
 Converts a 4 bit BCD digit to a 7 bit HEX output.
