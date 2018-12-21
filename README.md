@@ -18,8 +18,17 @@ This module is the top level module for the circuit design. It contains the Butt
 ### ReactionTime 
 This module handles the slowing of the clock, the generation of the random countdown number, as well as the counters for the Countdown and Test states. This module also handles the state transition logic.
 
-#### Random
+### Random
 This module is used to calculate a random number between 2000 and 15000. This is done by using a linear shift register.
 
-#### Counting
+### Counting
 This module is responsible for counting from 0 to a set limit if enabled. If not enabled the count simply remains at 0. When the count is completed an output tick is produced.
+
+### SlowClock
+Slows the clock to 1Mhz which is equivalent to 1ms.
+
+### BinaryToBCD
+Converts the binary reaction time to 4 BCD digits.
+
+## BCDToSevenSeg
+Converts a 4 bit BCD digit to a 7 bit HEX output.
